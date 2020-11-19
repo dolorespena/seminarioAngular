@@ -1,1 +1,32 @@
-<p>productss-list works!</p>
+<table class="table">
+    <thead class="encabezado">
+        <tr>
+            <th>Imagen</th>
+            <th>Producto</th>
+            <th>Tipo</th>
+            <th>Precio</th>
+            <th>Stock</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><img [src]="products.image" [alt]="products.product"></td>
+            <td>{{products.product}}</td>
+            <td>{{products.type}}</td>
+            <td>{{products.price}}</td>
+            <td>{{products.stock}}</td>
+        </tr>
+        <tr>
+            <td>Cuadernillo</td>
+            <td>Estandar</td>
+            <td>650</td>
+            <td>5</td>
+        </tr>
+        <tr>
+            <td>Anotadores</td>
+            <td>Estandar</td>
+            <td>250</td>
+            <td>10</td>
+        </tr>
+    </tbody>
+</table>
