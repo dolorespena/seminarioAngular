@@ -127,5 +127,8 @@
       }
     }
   },
-  "defaultProject": "atelier"
+  "defaultProject": "atelier",
+  "cli": {
+    "analytics": "0e90a4e0-6b62-40aa-9e93-b79a1fc1b6d3"
+  }
 }
