@@ -14,7 +14,7 @@
             <td>{{product.product}}</td>
             <td>{{product.type}}</td>
             <td>{{product.price}}</td>
-            <td>{{product.stock}}</td>
+            <td><span class="sinStock" *ngIf="product.stock==0">SIN STOCK</span></td>
         </tr>
     </tbody>
 </table>

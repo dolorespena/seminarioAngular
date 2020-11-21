@@ -4,4 +4,5 @@ export interface Products{
     price: number;
     stock: number;
     image: string;
+    clearance: boolean;
 }
