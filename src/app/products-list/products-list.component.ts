@@ -23,12 +23,20 @@ export class ProductsListComponent implements OnInit {
       type:'Estandar',
       price: 650,
       stock: 0
-    },{
+    },
+    {
       image:'assets/img/cuadernillo.jpeg',
       product:'Anotadores',
       type:'Estandar',
       price: 250,
       stock: 8
+    },
+    {
+      image:'assets/img/cuadernillo.jpeg',
+      product:'Tarjetas personales',
+      type:'Personalizada',
+      price: 300,
+      stock: 0
     }
   ];
   
