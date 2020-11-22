@@ -17,6 +17,7 @@ export class ProductsListComponent implements OnInit {
       price: 650,
       stock: 0,
       clearance: false,
+      quantity: 0,
     },
     {
       image:'assets/img/cuadernillo.jpeg',
@@ -25,6 +26,7 @@ export class ProductsListComponent implements OnInit {
       price: 1200,
       stock: 2,
       clearance: true,
+      quantity: 0,
     },
     {
       image:'assets/img/cuadernillo.jpeg',
@@ -33,6 +35,7 @@ export class ProductsListComponent implements OnInit {
       price: 250,
       stock: 8,
       clearance: false,
+      quantity: 0,
     },
     {
       image:'assets/img/cuadernillo.jpeg',
@@ -41,12 +44,21 @@ export class ProductsListComponent implements OnInit {
       price: 300,
       stock: 0,
       clearance: false, 
+      quantity: 0,
     }
   ];
   
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  upQuantity(product: Products): void {
+    product.quantity++;
+  }
+
+  downQuantity(product: Products): void {
+    product.quantity--;
   }
 
 }
