@@ -54,10 +54,12 @@ export class ProductsListComponent implements OnInit {
   }
 
   upQuantity(product: Products): void {
+    if(product.quantity < product.stock)
     product.quantity++;
   }
 
   downQuantity(product: Products): void {
+    if(product.quantity > 0)
     product.quantity--;
   }
 

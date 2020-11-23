@@ -16,7 +16,10 @@
             <td>{{product.type}}</td>
             <td>{{product.price | currency}}</td> 
             <td><span class="sinStock" *ngIf="product.stock==0">SIN STOCK</span></td>
-            <td><button class="btnmasmenos" (click)="downQuantity(product)">-</button>{{product.quantity}}<button class="btnmasmenos" (click)="upQuantity(product)">+</button></td>
+            <td><button class="btnmasmenos" (click)="downQuantity(product)">-</button>
+                <input type="text" [(ngModel)]="product.quantity">
+                <button class="btnmasmenos" (click)="upQuantity(product)">+</button>
+            </td>
         </tr>
     </tbody>
 </table>
