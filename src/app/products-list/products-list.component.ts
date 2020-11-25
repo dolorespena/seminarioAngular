@@ -63,4 +63,8 @@ export class ProductsListComponent implements OnInit {
     product.quantity--;
   }
 
+  changeQuantity(event: any, product: Products):  void {
+    event.preventDefault;
+  }
+
 }
