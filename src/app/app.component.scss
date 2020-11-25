@@ -1,3 +1,15 @@
 img{
     max-width: 200px;
 }
+ .row div{
+     padding: 20px;
+     color: lightcoral;
+}
+
+footer{
+    background-image: url(../assets/img/fondoTabla.png);
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
