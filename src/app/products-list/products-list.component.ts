@@ -9,7 +9,7 @@ import { Products } from './products';
 })
 export class ProductsListComponent implements OnInit {
 
-  products: Products[] = [
+  product: Products[] = [
     {
       image:'assets/img/cuadernillo.jpeg',
       product:'Cuadernillo',

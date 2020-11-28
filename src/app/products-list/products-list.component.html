@@ -10,14 +10,14 @@
         </tr>
     </thead>
     <tbody>
-        <tr *ngFor="let product of products" [ngClass]="{'clearance': product.clearance}">
+        <tr *ngFor="let product of product" [ngClass]="{'clearance': product.clearance}">
             <td><img [src]="product.image" [alt]="product.product"></td>
             <td>{{product.product}}</td>
             <td>{{product.type}}</td>
             <td>{{product.price | currency}}</td> 
             <td><span class="sinStock" *ngIf="product.stock==0">SIN STOCK</span></td>
             <td>
-                <app-input-integer *ngIf="product.stock"></app-input-integer>
+                <app-input-integer [(quantity)]="product.quantity" [max]="product.stock" *ngIf="product.stock"></app-input-integer>
             </td>
         </tr>
     </tbody>
