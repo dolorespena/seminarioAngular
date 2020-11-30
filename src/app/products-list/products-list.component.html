@@ -7,6 +7,7 @@
             <th>Precio</th>
             <th>Stock</th>
             <th>Compra</th>
+            <th></th>
         </tr>
     </thead>
     <tbody>
@@ -15,9 +16,12 @@
             <td>{{product.product}}</td>
             <td>{{product.type}}</td>
             <td>{{product.price | currency}}</td> 
-            <td><span class="sinStock" *ngIf="product.stock==0">SIN STOCK</span></td>
+            <td><span class="sinStock" *ngIf="product.stock==0">Sin Stock</span></td>
             <td>
-                <app-input-integer [(quantity)]="product.quantity" [max]="product.stock" *ngIf="product.stock"></app-input-integer>
+                <app-input-integer [(quantity)]="product.quantity" [max]="product.stock" *ngIf="product.stock" (maxReached)="maxReached($event)"></app-input-integer>
+               </td>
+            <td>
+                <button class="btn" (click)="addToCart(product)"><i class="fas fa-shopping-cart"></i></button>
             </td>
         </tr>
     </tbody>
