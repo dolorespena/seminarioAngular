@@ -1,6 +1,6 @@
 <button class="btnmasmenos" (click)="downQuantity()">-</button>
 <input 
     type="text" 
-    [(ngModel)]="quantity"
+    [(ngModel)]="product.quantity"
     (keyup)="changeQuantity($event)">
 <button class="btnmasmenos" (click)="upQuantity()">+</button>
