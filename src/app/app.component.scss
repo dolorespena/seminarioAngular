@@ -1,4 +1,4 @@
-img{
+.logo{
     max-width: 200px;
 }
 
@@ -13,4 +13,13 @@ footer{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+#navbarNav{
+    display: flex;
+    justify-content: flex-end
+}
+
+.nav-link:hover{
+    border-bottom: 2px solid lightcoral;
 }

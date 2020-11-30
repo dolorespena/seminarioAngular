@@ -1,6 +1,9 @@
-<button class="btnmasmenos" (click)="downQuantity()">-</button>
-<input 
-    type="text" 
-    [(ngModel)]="product.quantity"
-    (keyup)="changeQuantity($event)">
-<button class="btnmasmenos" (click)="upQuantity()">+</button>
+    <div class="input-group input-group-sm">
+        <div class="input-group-prepend">
+            <button class="btnmasmenos" (click)="downQuantity()">-</button>
+        </div>
+        <input type="text" [(ngModel)]="quantity" (keyup)="changeQuantity($event)">
+        <div class="input-group-append">
+            <button class="btnmasmenos" (click)="upQuantity()">+</button>
+        </div> 
+    </div>
