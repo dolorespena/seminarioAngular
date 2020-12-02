@@ -30,7 +30,7 @@ export class ProductsListComponent implements OnInit {
       quantity: 0,
     },
     {
-      image:'assets/img/cuadernillo.jpeg',
+      image:'assets/img/anotador.jpeg',
       product:'Anotadores',
       type:'Estandar',
       price: 250,
@@ -39,7 +39,7 @@ export class ProductsListComponent implements OnInit {
       quantity: 0,
     },
     {
-      image:'assets/img/cuadernillo.jpeg',
+      image:'assets/img/tarj-personales.jpeg',
       product:'Tarjetas personales',
       type:'Personalizada',
       price: 300,
